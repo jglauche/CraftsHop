@@ -1,0 +1,18 @@
+
+
+local:
+----------
+
+users - locally signed up users
+address - address linked to local user. Will only be transfered to another instance once on an order, other instance does not save it into address but sale_log
+
+
+[todo] sale_log: everything regarding an order
+
+
+sharable:
+----------
+
+account - accounts may be local or global, 1:1 to users for local
+shop - a shop linked to an account
+

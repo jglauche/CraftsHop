@@ -1,0 +1,42 @@
+# == Schema Information
+#
+# Table name: addresses
+#
+#  id         :bigint           not null, primary key
+#  country    :string
+#  default    :boolean
+#  house      :string
+#  name1      :string
+#  name2      :string
+#  postalcode :string
+#  state      :string
+#  street1    :string
+#  street2    :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  user_id    :integer
+#
+
+one:
+  user_id: 1
+  name1: MyString
+  name2: MyString
+  street1: MyString
+  street2: MyString
+  house: MyString
+  postalcode: MyString
+  state: MyString
+  country: MyString
+  default: false
+
+two:
+  user_id: 1
+  name1: MyString
+  name2: MyString
+  street1: MyString
+  street2: MyString
+  house: MyString
+  postalcode: MyString
+  state: MyString
+  country: MyString
+  default: false
