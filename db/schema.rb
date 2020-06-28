@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_28_181902) do
+ActiveRecord::Schema.define(version: 2020_06_28_190136) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +36,23 @@ ActiveRecord::Schema.define(version: 2020_06_28_181902) do
     t.boolean "default"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "shops", force: :cascade do |t|
+    t.integer "account_id"
+    t.boolean "remote"
+    t.string "name"
+    t.text "description"
+    t.boolean "open"
+    t.string "location"
+    t.boolean "location_enabled"
+    t.decimal "latitude", precision: 10, scale: 6
+    t.decimal "longitude", precision: 10, scale: 6
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["account_id"], name: "index_shops_on_account_id"
+    t.index ["open"], name: "index_shops_on_open"
+    t.index ["remote"], name: "index_shops_on_remote"
   end
 
   create_table "users", force: :cascade do |t|
