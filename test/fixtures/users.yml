@@ -1,0 +1,21 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id                 :bigint           not null, primary key
+#  admin              :boolean          default(FALSE)
+#  email              :string
+#  encrypted_password :string
+#  created_at         :datetime         not null
+#  updated_at         :datetime         not null
+#
+
+one:
+  email: MyString
+  encrypted_password: MyString
+  level: 1
+
+two:
+  email: MyString
+  encrypted_password: MyString
+  level: 1
