@@ -9,4 +9,6 @@
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
   %body
     .container-fluid
+      = render(partial: 'shared/navbar')
+    .container-fluid
       = yield
