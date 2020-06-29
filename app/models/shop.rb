@@ -22,4 +22,6 @@
 #  index_shops_on_remote      (remote)
 #
 class Shop < ApplicationRecord
+  has_one_attached :logo
+
 end
