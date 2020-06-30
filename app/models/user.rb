@@ -23,9 +23,11 @@
 #  unlock_token           :string
 #  created_at             :datetime         not null
 #  updated_at             :datetime         not null
+#  account_id             :integer          not null
 #
 # Indexes
 #
+#  index_users_on_account_id            (account_id)
 #  index_users_on_confirmation_token    (confirmation_token) UNIQUE
 #  index_users_on_email                 (email) UNIQUE
 #  index_users_on_reset_password_token  (reset_password_token) UNIQUE
@@ -37,5 +39,15 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
          :trackable, :confirmable
+  belongs_to :account, inverse_of: :user
+  accepts_nested_attributes_for :account
+
+  def before_save
+    account.save
+  end
+
+  def account
+    super || self.account = Account.new
+  end
 
 end
