@@ -28,13 +28,12 @@
 #
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
-
 en:
   helpers:
     label:
       user:
         email: Email
-        username: Username
         password: Password
         password_confirmation: Password confirmation
         remember_me: Remember me
+        username: Username
