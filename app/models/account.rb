@@ -14,5 +14,6 @@
 #
 class Account < ApplicationRecord
   has_one :user, autosave: true
+  has_many :shops
   validates :username, presence: true, uniqueness: { scope: :domain }
 end
