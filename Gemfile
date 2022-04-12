@@ -35,7 +35,7 @@ gem 'bootstrap', '~> 4.5'
 gem 'awesome_print'
 gem 'hamlit-rails'
 gem 'devise', '~> 4.7'
-gem 'devise-two-factor', '~> 3.1'
+gem 'devise-two-factor', '~> 4.0'
 gem 'omniauth', '~> 1.9'
 gem 'discard', '~> 1.2'
 
