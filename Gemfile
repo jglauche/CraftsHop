@@ -36,7 +36,7 @@ gem 'awesome_print'
 gem 'hamlit-rails'
 gem 'devise', '~> 4.7'
 gem 'devise-two-factor', '~> 4.0'
-gem 'omniauth', '~> 1.9'
+gem 'omniauth', '~> 2.0'
 gem 'discard', '~> 1.2'
 
 

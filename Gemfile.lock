@@ -161,9 +161,10 @@ GEM
     nokogiri (1.13.9)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    omniauth (1.9.2)
+    omniauth (2.0.0)
       hashie (>= 3.4.6)
       rack (>= 1.6.2, < 3)
+      rack-protection
     orm_adapter (0.5.0)
     pg (1.2.3)
     popper_js (1.16.0)
@@ -171,7 +172,9 @@ GEM
     puma (4.3.12)
       nio4r (~> 2.0)
     racc (1.6.0)
-    rack (2.2.4)
+    rack (2.2.6.2)
+    rack-protection (3.0.5)
+      rack
     rack-proxy (0.6.5)
       rack
     rack-test (1.1.0)
@@ -289,7 +292,7 @@ DEPENDENCIES
   i18n_yaml_sorter
   jbuilder (~> 2.7)
   listen (~> 3.2)
-  omniauth (~> 1.9)
+  omniauth (~> 2.0)
   pg (>= 0.18, < 2.0)
   puma (~> 4.3)
   rails (~> 6.0.3, >= 6.0.3.1)
